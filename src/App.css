@@ -20,22 +20,19 @@ body{
 }
 
 .container input{
-  height: 2rem;
+  height: 40px;
+  border-radius: 20px;
   outline: none;
-  border: none;
-  border-radius: 16px;
-background: #333344;
-box-shadow:  10px 10px 20px #23232e,
-             -10px -10px 20px #43435a;
-  color: #ddd;
-  animation: ease-in-out;
-  transition: 500ms;
+  background: #333344;
+  border: solid #DD7346 1px;
+  color: #fff;
 }
 
 .container input::placeholder{
-  color: #ddd;
+  color: #DD7346;
   text-align: center;
   transition: 200ms;
+  
 }
 
 .container input:focus::placeholder{
@@ -43,9 +40,21 @@ box-shadow:  10px 10px 20px #23232e,
 }
 
 .container button{
-  border-radius: 16px;
+  height: 40px;
+  border-radius: 20px;
+  outline: none;
   background: linear-gradient(145deg, #2e2e3d, #373749);
-  box-shadow:  10px 10px 20px #23232e,
-             -10px -10px 20px #43435a;
+  color: #DD7346;
+  border: solid #DD7346 1px;
+  animation: ease-in-out;
+  transition: 200ms;
+}
+
+.container h1{
   color: #ddd;
+}
+
+.container button:hover{
+  background: #DD7346;
+  color: #fff;
 }

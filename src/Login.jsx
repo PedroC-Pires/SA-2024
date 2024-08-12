@@ -6,6 +6,7 @@ function Login() {
   return (
     <>
     <div className='container'>
+      <img src='./imagens/logo.png'></img>
       <h1>Login</h1>
       <input type="email" name="registerEmail" id="registerEmail" placeholder='E-mail' />
       <input type="password" name="registerPassword" id="registerPassword" placeholder='Senha'/>
