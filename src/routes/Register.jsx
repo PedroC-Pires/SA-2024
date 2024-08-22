@@ -13,6 +13,7 @@ function App() {
       <input type="password" name="registerPassword" id="registerPassword" placeholder='Senha'/>
       <input type="password" name="registerPassword" id="registerPassword" placeholder='Repita a senha'/>
       <button>Cadastrar</button>
+      <a href="/">Já tenho cadastro</a>
     </div>
     </>
   )
