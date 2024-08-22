@@ -1,6 +1,5 @@
-import { useState } from 'react'
-import './App.css'
-import logo from './assets/fixit_logo2.png'
+import { useState } from 'react';
+import logo from '../assets/fixit_logo2.png';
 
 function App() {
 
