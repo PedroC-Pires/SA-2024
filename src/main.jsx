@@ -7,12 +7,17 @@ import {
   createBrowserRouter, RouterProvider
 } from 'react-router-dom'
 
-import Login from './routes/Login'
-import Register from './routes/Register'
+import Login from './routes/Login.jsx'
+import Register from './routes/Register.jsx'
+import Home from './routes/Home.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Home />
+  },
+  {
+    path: "Login",
     element: <Login />
   },
   {

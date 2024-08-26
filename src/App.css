@@ -6,7 +6,16 @@
   color: #ddd;
 }
 
-.container{
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container div,
+.container form {
   width: 240px;
   margin: auto;
   display: flex;
@@ -15,52 +24,11 @@
   gap: 1rem;
 }
 
-body{
+body {
   background-color: #333344;
 }
 
-.container input{
-  height: 40px;
-  border-radius: 20px;
-  outline: none;
-  background: #333344;
-  border: solid #DD7346 1px;
-  color: #fff;
-}
-
-.container input::placeholder{
-  color: #DD7346;
-  text-align: center;
-  transition: 200ms;
-  
-}
-
-.container input:focus::placeholder{
-  color: #00000000;
-}
-
-.container button{
-  height: 40px;
-  border-radius: 20px;
-  outline: none;
-  background: linear-gradient(145deg, #2e2e3d, #373749);
-  color: #DD7346;
-  border: solid #DD7346 1px;
-  animation: ease-in-out;
-  transition: 200ms;
-}
-
-.container h1{
-  color: #ddd;
-  margin-top: 0;
-}
-
-.container button:hover{
-  background: #DD7346;
-  color: #fff;
-}
-
-.logo{
+.logo {
   width: 130px;
   height: 130px;
   margin-left: auto;

@@ -1,22 +1,75 @@
-import { useState } from 'react';
-import logo from '../assets/fixit_logo2.png';
+import { useState } from "react";
+import logo from "../assets/fixit_logo2.png";
+import "../styles/Register.css";
 
 function App() {
-
   return (
     <>
-    <div className='container'>
-      <h1>Cadastro</h1>
-      <input type="text" id="registerName" placeholder='Nome'/>
-      <input type="email" name="registerEmail" id="registerEmail" placeholder='E-mail' />
-      <input type="text" placeholder="Telefone" />
-      <input type="password" name="registerPassword" id="registerPassword" placeholder='Senha'/>
-      <input type="password" name="registerPassword" id="registerPassword" placeholder='Repita a senha'/>
-      <button>Cadastrar</button>
-      <a href="/">Já tenho cadastro</a>
-    </div>
+      <div className="container">
+        <form action="submit">
+          <input
+            type="text"
+            name="registerName"
+            id="registerName"
+            placeholder="Nome"
+            className="input_white"
+          />
+          <input
+            type="email"
+            name="registerEmail"
+            id="registerEmail"
+            placeholder="E-mail"
+            className="input_white"
+          />
+          <input
+            type="text"
+            name="registerCpf"
+            id="registerCpf"
+            placeholder="CPF"
+            className="input_white"
+          />
+          <select name="estado" id="registerstado">
+            <option value="null">Selecione um estado</option>
+            <option value="ac">AC - Acre</option>
+            <option value="al">AL - Alagoas</option>
+            <option value="am">AM - Amazonas</option>
+            <option value="ba">BA - Bahia</option>
+            <option value="ce">CE - Ceará</option>
+            <option value="df">DF - Distrito Federal</option>
+            <option value="es">ES - Espírito Santo</option>
+            <option value="go">GO - Goiás</option>
+            <option value="ma">MA - Maranhão</option>
+            <option value="mt">MT - Mato Grosso</option>
+            <option value="ms">MS - Mato Grosso do Sul</option>
+            <option value="mg">MG - Minas Gerais</option>
+            <option value="pa">PA - Pará</option>
+            <option value="pb">PB - Paraíba</option>
+            <option value="pr">PR - Paraná</option>
+            <option value="pe">PE - Pernambuco</option>
+            <option value="pi">PI - Piauí</option>
+            <option value="rj">RJ - Rio de Janeiro</option>
+            <option value="rn">RN - Rio Grande do Norte</option>
+            <option value="rs">RS - Rio Grande do Sul</option>
+            <option value="ro">RO - Rondônia</option>
+            <option value="rr">RR - Roraima</option>
+            <option value="sc">SC - Santa Catarina</option>
+            <option value="sp">SP - São Paulo</option>
+            <option value="se">SE - Sergipe</option>
+            <option value="to">TO - Tocantins</option>
+          </select>
+          <input
+            type="password"
+            name="registerSenha"
+            id="registerSenha"
+            placeholder="Senha"
+            className="input_white"
+          />
+          <button className="btn_cyan">Entrar</button>
+          <a href="register">Não tenho cadastro</a>
+        </form>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
