@@ -5,7 +5,7 @@ import "../styles/Register.css";
 function App() {
   return (
     <>
-      <div className="row justaround wrap">
+      <div className="row justcenter wrap">
         <div>
           <form action="submit" className="col wrap form-register">
             <input
