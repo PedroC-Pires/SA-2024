@@ -1,6 +1,5 @@
-import logo from "../assets/fixit_logo2.png";
+import logo from "../assets/logo/FixIt Texto.png";
 import React from "react";
-import "../styles/Login.css";
 
 function Login() {
   return (
@@ -8,7 +7,6 @@ function Login() {
       <div className="container">
         <form action="">
           <img src={logo} className="logo"></img>
-          <h1>Login</h1>
           <input
             type="email"
             name="registerEmail"

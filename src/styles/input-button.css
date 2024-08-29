@@ -1,53 +1,56 @@
-h1 {
-  margin: 0;
-}
-
-.input_orange {
-  height: 40px;
-  border-radius: 20px;
-  outline: none;
-  background: none;
-  color: #dd7346;
-  border: solid #dd7346 1px;
-}
-
-.input_cyan {
-  height: 40px;
-  border-radius: 20px;
-  outline: none;
-  background: none;
-  color: #2ed0d0;
-  border: solid #2ed0d0 1px;
-}
-
-.input_white {
-  height: 40px;
-  border-radius: 20px;
-  outline: none;
-  background: none;
-  color: #eeeeee;
-  border: solid #eeeeee 1px;
-}
-
-.input_white::placeholder {
-  color: #dddddd;
-  text-align: center;
-}
-
 input {
+  min-height: 40px;
+  max-height: 40px;
+  max-width: 200px;
+  min-width: 200px;
   padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
   animation: ease-in-out;
   transition: 200ms;
 }
 
-input:focus {
-  padding-left: 16px;
+.input_orange {
+  border-radius: 20px;
+  outline: none;
+  background: none;
+  color: #dd7346;
+  box-shadow: 0px 0px 0px 1px #dd7346;
+}
+
+.input_cyan {
+  border-radius: 20px;
+  outline: none;
+  background: none;
+  color: #2ed0d0;
+  box-shadow: 0px 0px 0px 1px #2ed0d0;
+}
+
+.input_white {
+  border-radius: 20px;
+  outline: none;
+  background: none;
+  color: #eeeeee;
+  box-shadow: 0px 0px 0px 1px #fff;
+  border: none;
+}
+
+input::placeholder {
+  color: #dddddd;
+  text-align: center;
 }
 
 input:focus::placeholder {
   color: #00000000;
   animation: ease-in-out;
   transition: 200ms;
+}
+
+input:focus{
+  padding-left: 16px;
+  min-width: 192px;
+  max-width: 192px;
 }
 
 button {
@@ -62,6 +65,7 @@ button {
   background: none;
   color: #dd7346;
   border: solid #dd7346 1px;
+  cursor: pointer;
 }
 
 .btn_cyan {
@@ -71,6 +75,7 @@ button {
   background: none;
   color: #2ed0d0;
   border: solid #2ed0d0 1px;
+  cursor: pointer;
 }
 
 .btn_orange:hover {
@@ -81,6 +86,21 @@ button {
 .btn_cyan:hover {
   background: #2ed0d0;
   color: #fff;
+}
+
+select {
+  max-height: 40px;
+  min-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  outline: none;
+  background: none;
+  color: #eeeeee;
+  border: solid #eeeeee 1px;
+}
+
+option {
+  background-color: #333344;
 }
 
 a {
