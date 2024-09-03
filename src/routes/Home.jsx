@@ -1,11 +1,14 @@
-import React from 'react'
-import Header from '../elements/Header'
+import React from 'react';
+import Header from '../elements/Header';
+import beluga from '../assets/icons/beluga.jpg';
 
 function Home() {
 
   return (
     <>
-    <Header />
+    <img src={beluga} />
+    <input type='textarea'></input>
+    
     </>
   )
 }

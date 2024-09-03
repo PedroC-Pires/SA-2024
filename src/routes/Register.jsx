@@ -1,12 +1,16 @@
-import logo from "../assets/logo/svg/fixit_logo.svg";
+import logo from "../assets/logo/svg/fixit_logo_text.svg";
 import "../styles/Register.css";
+
+
 
 function App() {
   return (
     <>
       <div className="row justcenter wrap">
-        <div>
-          <form action="submit" className="col wrap form-register">
+        <div className="col justcenter aligncenter">
+          <img src={logo} className="logo1" />
+          <h4>Registro</h4>
+          <form action="submit" className="col wrap form-register" id="form-register">
             <input
               type="text"
               name="registerName"
@@ -72,7 +76,7 @@ function App() {
               className="input_white"
             />
             <button className="btn_cyan">Entrar</button>
-            <a href="login">Não tenho cadastro</a>
+            <a href="login">Já tenho cadastro</a>
           </form>
         </div>
       </div>
