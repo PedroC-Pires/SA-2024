@@ -54,12 +54,15 @@ input:focus{
 }
 
 button {
+  min-height: 40px;
+  max-height: 40px;
+  max-width: 216px;
+  min-width: 216px;
   animation: ease-in-out;
   transition: 200ms;
 }
 
 .btn_orange {
-  height: 40px;
   border-radius: 20px;
   outline: none;
   background: none;
@@ -69,7 +72,6 @@ button {
 }
 
 .btn_cyan {
-  height: 40px;
   border-radius: 20px;
   outline: none;
   background: none;

@@ -1,6 +1,10 @@
 @import url(./input-button.css);
 @import url(./layout.css);
 
-.form-register{
-  
+.form-login{
+    
+}
+
+.logo1{
+    width: 140px;
 }

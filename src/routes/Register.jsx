@@ -1,5 +1,4 @@
-import { useState } from "react";
-import logo from "../assets/fixit_logo2.png";
+import logo from "../assets/logo/svg/fixit_logo.svg";
 import "../styles/Register.css";
 
 function App() {
@@ -73,7 +72,7 @@ function App() {
               className="input_white"
             />
             <button className="btn_cyan">Entrar</button>
-            <a href="register">Não tenho cadastro</a>
+            <a href="login">Não tenho cadastro</a>
           </form>
         </div>
       </div>
