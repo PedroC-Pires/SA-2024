@@ -15,7 +15,7 @@ function Login() {
           placeholder="E-mail ou CPF"
           className="input_white"
         />
-        <button className="btn_cyan">Enviar</button>
+        <button className="btn_orange">Enviar</button>
         <a href="login">Voltar</a>
       </form>
       </div>

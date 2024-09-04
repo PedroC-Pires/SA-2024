@@ -21,9 +21,9 @@ function Login() {
           placeholder="Senha"
           className="input_white"
         />
-        <button className="btn_cyan">Entrar</button>
-        <a href="register">Não tenho cadastro</a>
-        <a href="password recovery">Esqueci minha senha</a>
+        <button className="btn_orange">Entrar</button>
+        <a href="/">Voltar</a>
+        <a href="password recovery">Esqueceu sua senha?</a>
       </form>
       </div>
     </>

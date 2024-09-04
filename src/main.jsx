@@ -12,12 +12,11 @@ import Register from './routes/Register.jsx';
 import Home from './routes/Home.jsx';
 import PasswordRecovery from './routes/PasswordRecovery.jsx';
 import Inicio from './routes/Inicio.jsx';
-import Codigo from './routes/Codigo.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />
+    element: <Inicio />
   },
   {
     path: "login",
@@ -31,14 +30,6 @@ const router = createBrowserRouter([
     path: "password recovery",
     element: <PasswordRecovery />
   },
-  {
-    path: "inicio",
-    element: <Inicio />
-  },
-  {
-    path: "codigo",
-    element: <Codigo />
-  }
 ])
 
 createRoot(document.getElementById('root')).render(

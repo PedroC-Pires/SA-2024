@@ -1,9 +1,16 @@
 import logo from "../assets/logo/svg/fixit_logo_text.svg";
 import "../styles/Register.css";
-
-
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    if(window.innerWidth>window.innerHeight) {
+      document.getElementById('form-register').style.height = '260px';
+    } else{
+      document.getElementById('form-register').style.height = 'fit-content';
+    }
+  })
+
   return (
     <>
       <div className="row justcenter wrap">
@@ -75,8 +82,8 @@ function App() {
               placeholder="Repita sua senha"
               className="input_white"
             />
-            <button className="btn_cyan">Entrar</button>
-            <a href="login">Já tenho cadastro</a>
+            <button className="btn_cyan">Cadastrar-se</button>
+            <a href="/">Voltar</a>
           </form>
         </div>
       </div>
