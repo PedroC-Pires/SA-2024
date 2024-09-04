@@ -14,10 +14,10 @@ function App() {
   return (
     <>
       <div className="row justcenter wrap">
-        <div className="col justcenter aligncenter">
+        <div className="col nowrap justcenter aligncenter">
           <img src={logo} className="logo1" />
           <h4>Registro</h4>
-          <form action="submit" className="col wrap form-register" id="form-register">
+          <form action="submit" className="col wrap" id="form-register">
             <input
               type="text"
               name="registerName"
@@ -86,6 +86,7 @@ function App() {
             <a href="/">Voltar</a>
           </form>
         </div>
+        
       </div>
     </>
   );
