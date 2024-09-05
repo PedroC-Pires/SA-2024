@@ -1,0 +1,7 @@
+@import url(./input-button.css);
+@import url(./layout.css);
+@import url(./texts.css);
+
+.about-us{
+    max-width: 600px;
+}

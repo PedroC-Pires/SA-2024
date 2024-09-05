@@ -5,8 +5,9 @@ function Login() {
   return (
     <>
       <div className="row justcenter wrap">
-      <form action="submit" className="col nowrap form-login aligncenter">
+      <div className="col nowrap form-login aligncenter">
         <img src={logo} className="logo1"/>
+        <h4>Login</h4>
         <input
           type="email"
           name="registerEmail"
@@ -21,10 +22,10 @@ function Login() {
           placeholder="Senha"
           className="input_white"
         />
-        <button className="btn_orange">Entrar</button>
+        <a href="/home"><button className="btn_orange">Entrar</button></a>
         <a href="/">Voltar</a>
         <a href="password recovery">Esqueceu sua senha?</a>
-      </form>
+      </div>
       </div>
     </>
   );

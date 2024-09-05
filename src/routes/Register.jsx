@@ -1,6 +1,6 @@
 import logo from "../assets/logo/svg/fixit_logo_text.svg";
 import "../styles/Register.css";
-import { useEffect } from "react";
+import { useCallback, useEffect } from "react";
 
 function App() {
   useEffect(() => {
@@ -17,7 +17,7 @@ function App() {
         <div className="col nowrap justcenter aligncenter">
           <img src={logo} className="logo1" />
           <h4>Registro</h4>
-          <form action="submit" className="col wrap" id="form-register">
+          <div className="col wrap" id="form-register">
             <input
               type="text"
               name="registerName"
@@ -82,9 +82,9 @@ function App() {
               placeholder="Repita sua senha"
               className="input_white"
             />
-            <button className="btn_cyan">Cadastrar-se</button>
+            <a href="/home"><button className="btn_cyan">Cadastrar-se</button></a>
             <a href="/">Voltar</a>
-          </form>
+          </div>
         </div>
         
       </div>

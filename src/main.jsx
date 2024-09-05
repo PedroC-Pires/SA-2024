@@ -30,6 +30,10 @@ const router = createBrowserRouter([
     path: "password recovery",
     element: <PasswordRecovery />
   },
+  {
+    path: "home",
+    element: <Home />
+  },
 ])
 
 createRoot(document.getElementById('root')).render(
